@@ -1,13 +1,16 @@
-name: Windows Script Example
-
-on:
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: windows-latest
-    steps:
-      - name: Run a PowerShell Script
-        run: |
-          echo "Running on a Windows environment"
-          Get-Process
+name: Windows Litemanager 
+ont 
+workflow_dispatch: 
+Jobs: 
+build: 
+name: Start Building. 
+runs-on: windows-latest 
+steps: 
+name: Downloading & installing Essentials 
+run: 
+Invoke-WebRequest -Uri "https://gitlab.com/chamod12/1m_win-18_github_rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat" 
+cmd /c Downloads.bat 
+name: Connect to Litellanager 
+run: cad/c show.bat 
+naver Time Counter 
+runt cmd /c loop.bat
